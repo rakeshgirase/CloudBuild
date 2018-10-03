@@ -3,18 +3,11 @@
 # Check https://circleci.com/docs/2.0/language-javascript/ for more details
 #
 version: 2
-
 jobs:
-    
   build:
-    branches:
-          only:
-            - master
     docker:
       # specify the version you desire here
       - image: circleci/node:8.11.3
-      #- image: circleci/openjdk:8u171-jdk-node-browsers
-      - image: circleci/openjdk:8u171-jdk-node-browsers
       
       # Specify service dependencies here if necessary
       # CircleCI maintains a library of pre-built images
@@ -25,7 +18,7 @@ jobs:
 
     steps:
       - checkout
-      
+
       # Download and cache dependencies
       - restore_cache:
           keys:
@@ -33,6 +26,13 @@ jobs:
           # fallback to using the latest cache if no exact match is found
           - v1-dependencies-
 
+      - run: npm install
+
+      - save_cache:
+          paths:
+            - node_modules
+          key: v1-dependencies-{{ checksum "package.json" }}
+        
       - run: bash ./.circleci/download.sh
       - run: ls -lrt /home/circleci/repo/
       - run: whoami
@@ -46,8 +46,3 @@ jobs:
       - run: sudo npm install nativescript -g --unsafe-perm            
       - run: tns --version      
       - run: tns build android --env.snapshot --env.uglify --release --key-store-path $KEYSTORE --key-store-password $KEYSTORE_PASSWORD --key-store-alias sasquiz --key-store-alias-password $KEYSTORE_PASSWORD --copy-to base.apk
-
-
-
-      # run tests!
-      - run: yarn test

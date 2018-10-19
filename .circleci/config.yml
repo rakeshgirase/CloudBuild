@@ -16,6 +16,7 @@ jobs:
       # - image: circleci/mongo:3.4.4
 
     environment:      
+      JAVA_HOME: /usr/lib/jvm/java-8-openjdk-amd64
       ANDROID_HOME: /usr/local/android-sdk-linux
       JVM_OPTS: -Xmx3200m
       
@@ -40,8 +41,7 @@ jobs:
           key: v1-dependencies-{{ checksum "package.json" }}
         
       - run: bash ./.circleci/download.sh
-      - run: ls -lrt /home/circleci/repo/      
-      - run: ls -lrt /usr/lib/jvm/
+      - run: ls -lrt /home/circleci/repo/            
       - run: npm --version
       - run: npm install six
       - run: npm i npm@latest

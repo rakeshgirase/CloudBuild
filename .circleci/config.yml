@@ -42,7 +42,7 @@ jobs:
           key: v1-dependencies-{{ checksum "package.json" }}
         
       - run: bash ./.circleci/download.sh
-      - run: find /usr/ -name "android*" -print
+      - run: find /usr/ -name "*android*" -print
       - run: ls -lrt /usr/local/      
       - run: npm install six
       - run: npm install nativescript-cloud      

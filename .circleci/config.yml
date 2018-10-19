@@ -18,8 +18,8 @@ jobs:
 
     environment:      
       JAVA_HOME: /usr/lib/jvm/java-8-openjdk-amd64
-      #ANDROID_HOME: /usr/local/android-sdk-linux
-      ANDROID_HOME: /usr/lib/google-cloud-sdk
+      ANDROID_HOME: /usr/local/android-sdk-linux
+      #ANDROID_HOME: /usr/lib/google-cloud-sdk
       JVM_OPTS: -Xmx3200m
       
 
@@ -43,8 +43,7 @@ jobs:
           key: v1-dependencies-{{ checksum "package.json" }}
         
       - run: sdkmanager
-      - run: bash ./.circleci/download.sh
-      - run: find ~ -name "*android-sdk-linux*" -print
+      - run: bash ./.circleci/download.sh      
       - run: ls -lrt /usr/local/      
       - run: npm install six
       - run: npm install nativescript-cloud      

@@ -41,6 +41,7 @@ jobs:
         
       - run: bash ./.circleci/download.sh
       - run: ls -lrt /home/circleci/repo/      
+      - run: ls -lrt /usr/lib/jvm/
       - run: npm --version
       - run: npm install six
       - run: npm i npm@latest

@@ -44,7 +44,7 @@ jobs:
         
       - run: sdkmanager
       - run: bash ./.circleci/download.sh
-      - run: find /usr/ -name "*android*" -print
+      - run: find ~ -name "*android-sdk-linux*" -print
       - run: ls -lrt /usr/local/      
       - run: npm install six
       - run: npm install nativescript-cloud      

@@ -42,15 +42,11 @@ jobs:
           key: v1-dependencies-{{ checksum "package.json" }}
         
       - run: bash ./.circleci/download.sh
-      - run: ls -lrt /usr/local/
-      - run: npm --version
+      - run: ls -lrt /usr/local/      
       - run: npm install six
-      - run: npm i npm@latest
-      - run: npm --version
-      - run: node -v
-      - run: npm install 
       - run: npm install nativescript-cloud      
-      - run: sudo npm install nativescript -g --unsafe-perm            
+      - run: sudo npm install nativescript -g --unsafe-perm
+      #- run: npm install
       - run: echo yes | tns setup
       - run: echo yes | tns cloud setup
       - run: echo yes | tns doctor

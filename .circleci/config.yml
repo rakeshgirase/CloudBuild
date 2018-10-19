@@ -41,7 +41,7 @@ jobs:
           key: v1-dependencies-{{ checksum "package.json" }}
         
       - run: bash ./.circleci/download.sh
-      - run: ls -lrt /home/circleci/repo/            
+      - run: ls -lrt /usr/local/android-sdk-linux
       - run: npm --version
       - run: npm install six
       - run: npm i npm@latest

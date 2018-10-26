@@ -45,6 +45,7 @@ jobs:
       - run: ls -lrt /opt/android/sdk
       - run: bash ./.circleci/download.sh
       - run: echo $KEYSTORE
+      - run: pwd
       - run: ls -lrt $KEYSTORE
       - run: npm install six
       - run: npm install nativescript-cloud      

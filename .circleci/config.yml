@@ -49,7 +49,7 @@ jobs:
       - run: ls -lrt $KEYSTORE
       - run: npm install six
       - run: npm install nativescript-cloud      
-      - run: sudo npm install nativescript -g --unsafe-perm
+      - run: echo yes | sudo npm install nativescript -g --unsafe-perm
       #- run: npm install
       - run: echo yes | tns setup
       - run: echo yes | tns cloud setup

@@ -8,7 +8,7 @@ jobs:
     docker:
       # specify the version you desire here            
       #- image: circleci/openjdk:8u181-jdk-node-browsers
-      - image: circleci/android:api-23-node8-alpha
+      - image: circleci/android:api-28-ndk-r17b
       
       #- image: circleci/android:api-25-alpha
       # Specify service dependencies here if necessary

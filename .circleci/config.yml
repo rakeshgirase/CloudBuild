@@ -47,8 +47,7 @@ jobs:
       - run: echo $KEYSTORE
       - run: pwd
       - run: ls -lrt $KEYSTORE
-      - run: npm install six
-      - run: npm install nativescript-cloud
+      - run: npm install six      
       - run: echo yes | sudo npm install nativescript -g --unsafe-perm
       - run: npm rebuild node-sass
       - run: npm update

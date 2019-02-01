@@ -51,6 +51,7 @@ jobs:
       - run: npm install nativescript-cloud
       - run: echo yes | sudo npm install nativescript -g --unsafe-perm
       - run: npm rebuild node-sass
+      - run: npm update
       #- run: npm install
       - run: echo yes | tns setup
       - run: echo yes | tns cloud setup

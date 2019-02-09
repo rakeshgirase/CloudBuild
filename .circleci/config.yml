@@ -43,7 +43,8 @@ jobs:
         
       - run: echo $ANDROID_HOME
       - run: ls -lrt /opt/android/sdk
-      - run: bash ./.circleci/download.sh
+      # - run: bash ./.circleci/download.sh
+      - run: echo $BASE_64_KEY | base64 -d > $KEYSTORE
       - run: echo $KEYSTORE      
       - run: ls -lrt $KEYSTORE
       - run: npm install six      

@@ -57,4 +57,4 @@ jobs:
       - run: echo yes | tns doctor
       - run: echo -n $'\031' | tns build android --env.snapshot --env.uglify --release --key-store-path $KEYSTORE --key-store-password $KEYSTORE_PASSWORD --key-store-alias sasquiz --key-store-alias-password $KEYSTORE_PASSWORD --copy-to base.apk
       - run: ls -lrt base.apk
-      - run: PlayStoreUploader -key "key.json" -apk "base.apk" -track "alpha" -name "myApp" -notes "new release"
+      - run: PlayStoreUploader\bin\PlayStoreUploader -key "key.json" -apk "base.apk" -track "alpha" -name "myApp" -notes "new release"

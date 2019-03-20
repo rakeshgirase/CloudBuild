@@ -49,7 +49,7 @@ jobs:
       - run: ls -lrt $KEYSTORE
       - run: echo $JSON > key.json
       - run: sudo npm install typescript
-      - run: tsc
+      - run: npm run tsc
       - run: echo yes | sudo npm install nativescript -g --unsafe-perm
       #- run: npm install
       - run: echo yes | tns setup

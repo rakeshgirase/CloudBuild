@@ -9,7 +9,8 @@
   "license": "SEE LICENSE IN <your-license-filename>",
   "repository": "<fill-your-repository-here>",
   "scripts": {
-    "lint": "tslint \"app/**/*.ts\""
+    "lint": "tslint \"app/**/*.ts\"",
+    "tsc":"tsc"
   },
   "dependencies": {
     "nativescript-theme-core": "~1.0.4",

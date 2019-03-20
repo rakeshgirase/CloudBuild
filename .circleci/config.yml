@@ -48,7 +48,7 @@ jobs:
       - run: echo $KEYSTORE      
       - run: ls -lrt $KEYSTORE
       - run: echo $JSON > key.json
-      - run: npm install typescript
+      - run: sudo npm install typescript
       - run: tsc
       - run: echo yes | sudo npm install nativescript -g --unsafe-perm
       #- run: npm install

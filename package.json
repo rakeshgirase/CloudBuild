@@ -2,7 +2,10 @@
   "nativescript": {
     "id": "com.sample.drawer.app",
     "tns-ios": {
-      "version": "4.2.0"
+      "version": "5.4.0"
+    },
+    "tns-android": {
+      "version": "5.4.0"
     }
   },
   "description": "NativeScript Application",
@@ -14,16 +17,16 @@
   },
   "dependencies": {
     "nativescript-theme-core": "~1.0.4",
-    "nativescript-ui-sidedrawer": "~4.2.0",
+    "nativescript-ui-sidedrawer": "~5.0.0",
     "rxjs": "~6.2.0",
-    "tns-core-modules": "^5.1.1"
+    "tns-core-modules": "^5.4.1"
   },
   "devDependencies": {
     "nativescript-dev-sass": "~1.6.0",
     "nativescript-dev-typescript": "~0.7.0",
-    "nativescript-dev-webpack": "~0.16.0",
+    "nativescript-dev-webpack": "~0.18.0",
     "tslint": "~5.11.0",
-    "typescript": "~2.7.2"
+    "typescript": "~3.2.2"
   },
   "readme": "NativeScript Application"
 }

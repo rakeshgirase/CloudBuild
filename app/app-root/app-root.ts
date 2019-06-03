@@ -2,7 +2,7 @@ import { RadSideDrawer } from "nativescript-ui-sidedrawer";
 import * as app from "tns-core-modules/application";
 import { EventData } from "tns-core-modules/data/observable";
 import { topmost } from "tns-core-modules/ui/frame";
-import { GridLayout } from "ui/layouts/grid-layout";
+import { GridLayout } from "tns-core-modules/ui/layouts/grid-layout";
 
 import { AppRootViewModel } from "./app-root-view-model";
 

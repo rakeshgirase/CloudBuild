@@ -1,5 +1,5 @@
-import * as app from "application";
-import { EventData } from "data/observable";
+import * as app from "tns-core-modules/application";
+import { EventData } from "tns-core-modules/data/observable";
 import { RadSideDrawer } from "nativescript-ui-sidedrawer";
 import { topmost } from "ui/frame";
 import { GridLayout } from "ui/layouts/grid-layout";

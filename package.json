@@ -2,7 +2,10 @@
   "nativescript": {
     "id": "com.sample.drawer.app",
     "tns-ios": {
-      "version": "4.2.0"
+      "version": "5.4.0"
+    },
+    "tns-android": {
+      "version": "5.4.0"
     }
   },
   "description": "NativeScript Application",

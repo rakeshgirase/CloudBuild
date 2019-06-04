@@ -55,5 +55,6 @@ jobs:
       - run: echo yes | tns setup
       - run: echo yes | tns cloud setup
       - run: echo yes | tns doctor
+      - run: echo yes | tns info
       - run: echo -n $'\031' | tns build android --env.snapshot --env.uglify --release --key-store-path $KEYSTORE --key-store-password $KEYSTORE_PASSWORD --key-store-alias sasquiz --key-store-alias-password $KEYSTORE_PASSWORD --copy-to base.apk
       - run: java -jar release-manager-1.0.jar -key "key.json" -apk "base.apk" -track "alpha" -name "myApp" -notes "new release"

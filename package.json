@@ -13,6 +13,7 @@
   "repository": "<fill-your-repository-here>",
   "scripts": {
     "lint": "tslint \"app/**/*.ts\"",
+    "lintfix": "tslint --fix app/**/*.ts{,x}",
     "tsc": "tsc"
   },
   "dependencies": {
@@ -26,7 +27,7 @@
     "nativescript-dev-sass": "~1.7.0",
     "nativescript-dev-typescript": "~0.10.0",
     "nativescript-dev-webpack": "~0.24.0",
-    "tslint": "~5.17.0",
+    "tslint": "^5.17.0",
     "typescript": "~3.5.1",
     "uglifyjs-webpack-plugin": "^2.1.3"
   },

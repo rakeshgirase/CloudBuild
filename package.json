@@ -21,7 +21,7 @@
     "rxjs": "~6.5.2",
     "tns-core-modules": "^5.4.1"
   },
-  "devDependencies": {    
+  "devDependencies": {
     "awesome-typescript-loader": "~5.2.1",
     "nativescript-dev-sass": "~1.7.0",
     "nativescript-dev-typescript": "~0.10.0",
